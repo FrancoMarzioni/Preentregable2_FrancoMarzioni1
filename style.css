@@ -1,1 +1,25 @@
+*
+/*HEADER:*/
+header .logo{
+    margin: 0;
+    padding: 25px 30px;
+    font-weight: bold;
+    color: rgb(254, 254, 254);
+    font-size: 1.6em;
+}
+header{
+    background-color: rgb(25, 25, 25);
+}
+.navbar-nav-custom .nav-link  {
+    color: rgb(254, 254, 254);
+    
+}
+X
 
+
+
+
+/*BODY*/
+#body_1{
+    background-color: rgb(245, 245, 245);
+}
