@@ -48,24 +48,38 @@ button:hover{
     background-size: cover;
     background-position: center center;
 }
-
 #hero h1{
     color: white;
 }
-
 #hero button{
     font-size: 1.55em;
 }
+
 #caracteristicas .container_Franco{
     text-align: center;
-    padding: 250px 12px;
+    padding: 80px 12px;
 }
 
 #caracteristicas li{
     margin: 16px 0px;
     font-weight: bold;
 }
+@media (min-width: 1200px) {
+    #caracteristicas{
+        background-position-x: calc(100vw - 800px);
+    }
+}
 
+.grid-container {   /*agrego propiedad grid*/
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+   }
+
+#Fg-automotores .grid-container{
+    text-align: center;
+    padding: 200px 12px 0px;
+}
 
 
 
@@ -78,9 +92,4 @@ footer p{
     margin: 0;
     padding: 12px;
     color: rgb(100,100,100);
-}
-@media (min-width: 1200px) {
-    #caracteristicas{
-        background-position-x: calc(100vw - 800px);
-    }
 }
