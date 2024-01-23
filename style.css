@@ -31,7 +31,7 @@ header{  /* Modifico Background-color*/
 button:hover{
     background-color: green;
 }
-#hero{
+#hero{      /* Aca agregue propiedades decorativas y flex al hero*/
     display: flex;
     align-items: center;
     justify-content: center;
@@ -43,7 +43,7 @@ button:hover{
         rgba(0,0,0,0.5),
         rgba(0,0,0,0.5)
     )
-    ,url("Foto-agencia.jpg");
+    ,url("images/Foto-agencia.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -56,6 +56,19 @@ button:hover{
 #hero button{
     font-size: 1.55em;
 }
+#caracteristicas .container_Franco{
+    text-align: center;
+    padding: 250px 12px;
+}
+
+#caracteristicas li{
+    margin: 16px 0px;
+    font-weight: bold;
+}
+
+
+
+
 
 /*FOOTER*/
 footer{
@@ -65,4 +78,9 @@ footer p{
     margin: 0;
     padding: 12px;
     color: rgb(100,100,100);
+}
+@media (min-width: 1200px) {
+    #caracteristicas{
+        background-position-x: calc(100vw - 800px);
+    }
 }
