@@ -18,6 +18,7 @@ header{  /* Modifico Background-color*/
 
 
 
+
 /*BODY*/
 #body_1{
     background-color: rgb(245, 245, 245);
@@ -31,7 +32,7 @@ header{  /* Modifico Background-color*/
 button:hover{
     background-color: green;
 }
-#hero{
+#hero{      /* Aca agregue propiedades decorativas y flex al hero*/
     display: flex;
     align-items: center;
     justify-content: center;
@@ -43,19 +44,94 @@ button:hover{
         rgba(0,0,0,0.5),
         rgba(0,0,0,0.5)
     )
-    ,url("Foto-agencia.jpg");
+    ,url("images/Foto-agencia.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
 }
-
 #hero h1{
     color: white;
 }
-
 #hero button{
     font-size: 1.55em;
 }
+
+#caracteristicas .container_Franco{
+    text-align: center;
+    padding: 80px 12px;
+}
+
+#caracteristicas li{
+    margin: 16px 0px;
+    font-weight: bold;
+}
+@media (min-width: 1200px) {
+    #caracteristicas{
+        background-position-x: calc(100vw - 800px);
+    }
+}
+
+.grid-container {   /*agrego propiedad grid*/
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+   }
+
+#Fg-automotores .grid-container{
+    text-align: center;
+    padding: 200px 12px 0px;
+}
+
+/*Modifficaciones de index y propiedades */
+
+#final{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(30,30,30);
+    color: white;
+    height: 80vh;
+}
+
+#final h2{
+    font-size: 9vw;
+}
+
+#final button{
+    font-size: 5vw;
+}
+
+
+@media (min-width: 800px){
+    
+
+    #hero h1{
+        font-size: 5em;
+    }
+
+
+    #caracteristicas ul{
+        margin-left: 100px;
+    }
+
+    #final h2{
+        font-size: 5em;
+    }
+
+    #final button{
+        font-size: 2em;
+    }
+
+    footer .container_Franco{
+        justify-content: flex-end;
+    }
+}
+
+
+
+
 
 /*FOOTER*/
 footer{
@@ -66,3 +142,5 @@ footer p{
     padding: 12px;
     color: rgb(100,100,100);
 }
+
+
