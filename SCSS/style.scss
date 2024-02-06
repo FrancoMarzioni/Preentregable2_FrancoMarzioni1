@@ -2,20 +2,27 @@ $color_1: rgb(254, 254, 254);
 $color_2: white;
 $color_3: rgb(100,100,100);
 $font-family_1: 'Roboto', sans-serif;
-$background-color_1: rgb(25, 25, 25);
+/* $background-color_1: rgb(25, 25, 25);
 $background-color_2: rgb(245, 245, 245);
 $background-color_3: green;
 $background-color_4: rgb(30,30,30);
 $background-color_5: rgb(230,230,230);
+*/
+$background-colors: (
+  bg-1: rgb(25, 25, 25),
+  bg-2: rgb(245, 245, 245),
+  bg-3: green,
+  bg-4: rgb(30, 30, 30),
+  bg-5: rgb(230, 230, 230)
+);
 
-/*HEADER:*/
-/*BODY*/
-/*Modifficaciones de index y propiedades */
-/*FOOTER*/
+
+
+
 * 
-
+/*HEADER:*/
 header {
-	background-color: $background-color_1;
+	background-color: $background-colors[bg-1];
 		.logo {
 			margin: 0;
 			padding: 25px 30px;
@@ -34,6 +41,8 @@ header {
 	.nav-link {
 		color: $color_1;
 	}
+
+/*BODY*/
 }
 #body_1 {
 	background-color: $background-color_2;
@@ -46,7 +55,7 @@ header {
 }
 button {
 	&:hover {
-		background-color: $background-color_3;
+		background-color: $background-colors[bg-2];
 	}
 }
 #hero {
@@ -103,6 +112,8 @@ button {
 	button {
 		font-size: 5vw;
 	}
+
+/*FOOTER*/
 }
 footer {
 	background-color: $background-color_5;
