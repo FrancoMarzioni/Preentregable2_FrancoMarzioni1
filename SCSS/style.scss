@@ -1,20 +1,7 @@
-$color_1: rgb(254, 254, 254);
-$color_2: white;
-$color_3: rgb(100,100,100);
-$font-family_1: 'Roboto', sans-serif;
-/* $background-color_1: rgb(25, 25, 25);
-$background-color_2: rgb(245, 245, 245);
-$background-color_3: green;
-$background-color_4: rgb(30,30,30);
-$background-color_5: rgb(230,230,230);
-*/
-$background-colors: (
-  bg-1: rgb(25, 25, 25),
-  bg-2: rgb(245, 245, 245),
-  bg-3: green,
-  bg-4: rgb(30, 30, 30),
-  bg-5: rgb(230, 230, 230)
-);
+//utilities
+@import './partials/utilities/variables';
+@import './partials/utilities/mixins';
+
 
 
 
@@ -22,7 +9,7 @@ $background-colors: (
 * 
 /*HEADER:*/
 header {
-	background-color: $background-colors[bg-1];
+	background-color: $background-color_1;
 		.logo {
 			margin: 0;
 			padding: 25px 30px;
@@ -55,20 +42,18 @@ header {
 }
 button {
 	&:hover {
-		background-color: $background-colors[bg-2];
+		background-color: $background-color_3;
 	}
 }
 #hero {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	text-align: center;
-	flex-direction: column;
+	@include flex(column,center ,center );
+
 	height: 90vh;
-	background-image: linear-gradient( 0deg, rgba(0,0,0,0.5), rgba(0,0,0,0.5) ) ,url("images/Foto-agencia.jpg");
+	background-image: linear-gradient( 0deg, rgba(0,0,0,0.5), rgba(0,0,0,0.5) ) ,url("/images/Foto-agencia.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center center;
+
 	h1 {
 		color: $color_2;
 	}
@@ -98,11 +83,8 @@ button {
 	}
 }
 #final {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	text-align: center;
+	@include flex(column,center ,center );
+
 	background-color: $background-color_4;
 	color: $color_2;
 	height: 80vh;
