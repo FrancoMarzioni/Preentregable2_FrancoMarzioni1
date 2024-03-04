@@ -1,6 +1,6 @@
-
-@import '/SCSS/partials/utilities/variables';
-@import '/SCSS/partials/utilities/mixins';
+//utilities
+@import './partials/utilities/variables';
+@import './partials/utilities/mixins';
 
 
 
@@ -49,10 +49,11 @@ button {
 	@include flex(column,center ,center );
 
 	height: 90vh;
-	background-image: linear-gradient( 0deg, rgba(0,0,0,0.5), rgba(0,0,0,0.5) ) ,url("images/Foto-agencia.jpg");
+	background-image: linear-gradient( 0deg, rgba(0,0,0,0.5), rgba(0,0,0,0.5) ) ,url("/images/Foto-agencia.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center center;
+
 	h1 {
 		color: $color_2;
 	}
